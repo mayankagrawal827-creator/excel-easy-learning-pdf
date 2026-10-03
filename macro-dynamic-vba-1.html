@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Excel Macro Recorder to Dynamic VBA with ChatGPT</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#eef2f7;font-family:Arial,Helvetica,sans-serif;color:#172033}
+.wrap{max-width:950px;margin:auto;padding:12px}
+.card{background:#fff;border-radius:20px;padding:22px 18px;box-shadow:0 4px 18px rgba(0,0,0,.12)}
+.hero{text-align:center}
+.icon{font-size:52px}
+h1{font-size:28px;margin:5px 0 10px}
+.lead{font-size:17px;color:#475569;line-height:1.5}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:15px;margin:11px 0;font-size:17px;font-weight:700;cursor:pointer}
+.yt{background:#ff0000;color:#fff}
+.yes{background:#16a34a;color:#fff}
+.note{background:#f1f5f9;border-radius:10px;padding:14px;line-height:1.5;color:#475569;margin:20px 0 14px}
+#viewer{display:none}
+.pdfbox{width:100%;height:78vh;min-height:650px;border:1px solid #dbe3ee;border-radius:12px;overflow:hidden;background:#fff}
+.pdfbox iframe{width:100%;height:100%;border:0}
+.small{text-align:center;color:#64748b;font-size:13px;margin-top:15px;line-height:1.5}
+@media(max-width:600px){
+  .wrap{padding:8px}
+  .card{padding:17px 12px}
+  h1{font-size:25px}
+  .lead{font-size:16px}
+  .pdfbox{height:75vh;min-height:560px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="hero">
+      <div class="icon">📘</div>
+      <h1>Excel Easy Learning</h1>
+      <div class="lead">
+        <b>Excel Macro Recorder to Dynamic VBA with ChatGPT</b><br>
+        Detailed 21-Step PDF Guide with Excel screenshots
+      </div>
+    </div>
+
+    <button class="btn yt" onclick="subscribe()">▶ Subscribe to Excel Easy Learning</button>
+    <button class="btn yes" onclick="showPDF()">✅ I Have Subscribed — View PDF</button>
+
+    <div id="viewer">
+      <div class="note">
+        <b>📚 Detailed PDF Guide</b><br>
+        This guide covers 21 steps, Excel screenshots, the fixed-range limitation of recorded VBA,
+        asking ChatGPT to make VBA dynamic, testing, and VBA safety best practices.
+      </div>
+
+      <div class="pdfbox">
+        <iframe
+          src="Excel_Macro_Recorder_Dynamic_VBA_ChatGPT_Detailed.pdf#toolbar=1&navpanes=0&view=FitH"
+          title="Excel Macro Recorder to Dynamic VBA with ChatGPT PDF"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="small">
+        Excel Easy Learning • Dynamic VBA Detailed Guide<br>
+        For best results, use the PDF viewer controls to zoom and navigate pages.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function subscribe(){
+  window.open('https://www.youtube.com/@exceleasylearning-c2z','_blank');
+}
+function showPDF(){
+  const viewer=document.getElementById('viewer');
+  viewer.style.display='block';
+  viewer.scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
